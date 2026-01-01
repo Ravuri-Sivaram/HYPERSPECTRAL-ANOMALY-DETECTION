@@ -27,16 +27,3 @@ Install dependencies using:
 ```bash
 pip install numpy scipy scikit-learn matplotlib
 
----
-
-File Structure
-
-main.py - Entry point for data loading, dictionary construction, LRSR computation, visualization, and ROC-AUC evaluation.
-
-dictionary.py - Functions to build background and anomaly dictionaries from hyperspectral images.
-
-lrsr_.py - Low-Rank and Sparse Representation computations.
-
-visualization.py - Functions to display results and compute ROC-AUC.
-
-utils.py - Helper functions for data conversion, normalization, SOMP, and window creation.
