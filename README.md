@@ -26,4 +26,20 @@ Hyperspectral Anomaly Detection using Dictionary Learning, Low-Rank and Sparse R
 Install dependencies using:
 ```bash
 pip install numpy scipy scikit-learn matplotlib
+```
+## File Structure
 
+- `main.py` - Entry point for data loading, dictionary construction, LRSR computation, visualization, and ROC-AUC evaluation.
+- `dictionary.py` - Functions to build background and anomaly dictionaries from hyperspectral images.
+- `lrsr_.py` - Low-Rank and Sparse Representation computations.
+- `visualization.py` - Functions to display results and compute ROC-AUC.
+- `utils.py` - Helper functions for data conversion, normalization, SOMP, and window creation.
+
+## Usage
+
+1. Place your hyperspectral data and groundtruth `.mat` files in the project directory.
+2. Update file paths in `main.py` for your dataset.
+3. Run:
+
+```bash
+python main.py
